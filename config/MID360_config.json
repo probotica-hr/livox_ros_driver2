@@ -25,23 +25,11 @@
   },
   "lidar_configs" : [
     {
+      "name" : "front_lidar",
       "ip" : "192.168.10.111",
       "pcl_data_type" : 1,
       "pattern_mode" : 0,
-      "frame_id" : "front_lidar_link",
-      "extrinsic_parameter" : {
-        "roll": 0.0,
-        "pitch": 0.0,
-        "yaw": 0.0,
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-          {
-      "ip" : "192.168.10.112",
-      "pcl_data_type" : 1,
-      "pattern_mode" : 0,
-      "frame_id" : "back_lidar_link",
+      "frame_id" : "front_lidar_link_optical",
       "extrinsic_parameter" : {
         "roll": 0.0,
         "pitch": 0.0,
@@ -50,7 +38,20 @@
         "y": 0,
         "z": 0
       }
-    }
+    },
+    {
+      "ip" : "192.168.10.112",
+      "pcl_data_type" : 1,
+      "pattern_mode" : 0,
+      "frame_id" : "back_lidar_link_optical",
+      "extrinsic_parameter" : {
+        "roll": 0.0,
+        "pitch": 0.0,
+        "yaw": 0.0,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
     }
   ]
 }
